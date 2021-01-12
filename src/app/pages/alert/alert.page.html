@@ -1,0 +1,25 @@
+<app-header [titulo] = " titulo || 'alerta' | titlecase "></app-header>
+
+<ion-content>
+  <ion-button 
+    color = "primary"
+    expand = "full"
+    (click) = "presentAlert()"
+  >
+    ALERTA
+  </ion-button>
+  <ion-button 
+    color = "primary"
+    expand = "full"
+    (click) = "presentAlertPrompt()"
+  >
+    Prompt
+  </ion-button>
+  <ion-button 
+    color = "primary"
+    expand = "full"
+    (click) = "presentInput()"
+  >
+    Input
+  </ion-button>
+</ion-content>
