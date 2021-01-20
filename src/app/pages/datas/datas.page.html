@@ -1,0 +1,16 @@
+<app-header [titulo] = "'Data' | titlecase "></app-header>
+
+<!-- value="{{completeDate | date: 'YYYY-MM-DDTHH:mmZ'}}" -->
+
+<ion-content>
+  <ion-item>
+    <ion-label>Data</ion-label>
+    <ion-datetime 
+    placeholder="Data"
+    cancelText  = "Cancelar"
+    [(ngModel)] = "completeDate"
+    (ionChange) = "changeData($event)"
+
+    ></ion-datetime>
+  </ion-item>
+</ion-content>

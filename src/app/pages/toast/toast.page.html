@@ -1,0 +1,21 @@
+<app-header [titulo] = "'Toast' | titlecase "></app-header>
+
+<ion-content padding>
+
+  <ion-button
+  color = "dark"
+  expand = "full"
+  (click)="presentToast()"
+  >
+    Toast!
+  </ion-button>
+
+  <ion-button
+  color = "dark"
+  expand = "full"
+  (click)="presentToastWithOptions()"
+  >
+    Toast but bigger!
+  </ion-button>
+
+</ion-content>
